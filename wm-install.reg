@@ -14,10 +14,10 @@ Windows Registry Editor Version 5.00
 
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\MonitoringClient]
-"ClientGroup"=""
+"ClientGroup"="ENTER_GROUP_NAME_HERE"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\MonitoringClient]
-"ClientGroup"=""
+"ClientGroup"="ENTER_GROUP_NAME_HERE"
 
 ; Auto Update is enabled by default. Set the following key to 0 to disable
 
