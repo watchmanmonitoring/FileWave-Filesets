@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+; The Watchman Monitoring Server's Dashboard uses a Group setting to help sort an identify Computer Records.
+
+; The Group value is stored in a key called "ClientGroup", and can be pre-set using this sample .reg file
+
+; Good Group values might reference a company name, a department, or the surname of a computer's owner.
+
+; e.g. If a computer belonged to a company named Widgets Inc, a good choice might be "Widgets Inc"
+
+; Enter the desired Group value in between quotes
+
+; Enter the value for the 32 and 64 bit systems below, or fill in both with the same Group if unsure.
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\MonitoringClient]
+"ClientGroup"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\MonitoringClient]
+"ClientGroup"=""
+
+; Auto Update is enabled by default. Set the following key to 0 to disable
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\MonitoringClient]
+"AutoUpdateEnabled"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\MonitoringClient]
+"AutoUpdateEnabled"="1"
+
